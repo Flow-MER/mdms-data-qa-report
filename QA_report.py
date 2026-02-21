@@ -742,17 +742,17 @@ def main():
     try:
         # The factory function in config.py determines the correct config class
         # based on the default input_file or one passed as a kwarg.
-        config = get_config(input_file=input_file, testing_group_name=testing_group_name)
+        config = get_config()
     except ValueError as e:
         print(e)
         return
 
-    output_path = Path(__file__).parent / "Outputs"
+    output_path = Path(__file__).parent / config.output_path
     ensure_path_exists(output_path)
     #input_file:str = "waterbirdsurvey_20260220153534.xlsx"
     #decode time-stamp from input_file
     try:
-        timestamp_str = input_file.split("_")[1].split(".")[0]
+        timestamp_str = config.input_file.split("_")[1].split(".")[0]
         data_date = datetime.datetime.strptime(timestamp_str, "%Y%m%d%H%M%S").strftime("%Y-%m-%d %H:%M:%S")
     except (IndexError, ValueError):
         data_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

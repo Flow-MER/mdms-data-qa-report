@@ -12,9 +12,9 @@ class BaseQAReportConfig:
     start_date: pd.Timestamp = pd.to_datetime("2025-06-01")
     end_date: pd.Timestamp = pd.to_datetime("2026-07-31")
     filter_by_date: bool = True
-    input_file: str = None
     create_markdown_report: bool = False
     workbooks_path: Path = Path("workbooks")
+    output_path: Path = Path("output")
     group_id: Dict[str, int] = field(
         default_factory=lambda: {
             "BAL": 15,
