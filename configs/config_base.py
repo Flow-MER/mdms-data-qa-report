@@ -6,7 +6,9 @@ from pathlib import Path
 
 @dataclass
 class BaseQAReportConfig:
-    testing_group_name: str = "LAC"
+    #input workbook folder
+    input_file:str = "waterbirdsurvey_20260220153534.xlsx"
+    testing_group_name: str = None #can limit to just one group "LAC"
     start_date: pd.Timestamp = pd.to_datetime("2025-06-01")
     end_date: pd.Timestamp = pd.to_datetime("2026-07-31")
     filter_by_date: bool = True

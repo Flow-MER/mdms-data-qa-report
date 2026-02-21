@@ -1,5 +1,3 @@
-
-
 from itertools import count
 from shlex import join
 import pandas as pd
@@ -12,10 +10,9 @@ from pdf_qa_report import PDFQAReport
 from md_qa_report import MarkdownQAReport
 import datetime
 
-input_file: str = "Fish_20260219173914.xlsx"
-#input_file: str = "Vegetation_20260219153548.xlsx"
-input_file:str = "waterbirdsurvey_20260220153534.xlsx"
-testing_group_name: str = "MAC"#None#"MMY"#None #"LAC"
+# base configuration in configs\config.base.py
+# workbooks exported from the MDMS go in a folder called "workbooks"
+# individual reports are configured in the configs folder
 
 
 def ensure_path_exists(directory):
@@ -107,8 +104,6 @@ def load_data(filepath, group_name_source, workbook_def, testing_group, filter_d
         workbook_data[group_name] = grp_dfs
 
     return workbook_data
-
-
 
 
 def join_tables_generic(dfs, joins_required):

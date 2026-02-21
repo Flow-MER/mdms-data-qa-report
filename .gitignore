@@ -1,6 +1,6 @@
 .venv/
-Outputs/
+*.pdf
 log/
-workbooks/
+*.xlsx
 __pycache__/
 

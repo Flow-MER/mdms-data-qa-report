@@ -45,7 +45,7 @@ A PDF and/or Markdown reports (or both) are generated for each Flow-MER are-scal
 
 The script is configured via dataclasses found in the `configs` directory. Each monitoring theme data standard (e.g., `fish_config.py`) has its own configuration file that defines the expected workbook structure, table joins, summary statistics, and plots.
 
-execution script: `python QAreport.py`
+execution script: `python QA_report.py`
 
 ## Processing Environment
 
