@@ -6,8 +6,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 from pathlib import Path
 from config import get_config
-from pdf_qa_report import PDFQAReport
-from md_qa_report import MarkdownQAReport
+from lib.pdf_qa_report import PDFQAReport
+from lib.md_qa_report import MarkdownQAReport
 import datetime
 
 # base configuration in configs\config.base.py

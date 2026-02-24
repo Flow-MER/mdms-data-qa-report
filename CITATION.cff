@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Brooks
+    given-names: Shane
+    orcid: https://orcid.org/0000-0002-5636-1783
+title: "MDMS Data Quality Assurance (QA) Report Generator."
+collection-title: "Flow-MER Program"
+publisher: "Commonwealth Environmental Water Holder"
+version: 1.0
+date-released: 2026-02-01
+license: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+repository-code: "https://github.com/Flow-MER/mdms-data-qa-report"
+references:
+  - authors:
+      - name: "Commonwealth of Australia"
+      - family-names: Brooks
+        given-names: Shane
+      - family-names: King
+        given-names: Alison
+      - family-names: Thompson
+        given-names: Ross
+      - family-names: Bino
+        given-names: Galad
+      - family-names: Bond
+        given-names: Nick
+      - family-names: Carver
+        given-names: Jem
+      - family-names: Cuddy
+        given-names: Sue
+      - family-names: Downey-Bechelet
+        given-names: Mitch
+      - family-names: Dyer
+        given-names: Fiona
+      - family-names: Flett
+        given-names: Di
+      - family-names: Frost
+        given-names: Lindsey
+      - family-names: Giatas
+        given-names: George
+      - family-names: Hall
+        given-names: Andrew
+      - family-names: McCasker
+        given-names: Nicole
+      - family-names: Mika
+        given-names: Sarah
+      - family-names: Nolan
+        given-names: Martin
+      - family-names: Short
+        given-names: David
+      - family-names: Tschierschke
+        given-names: Alica
+      - family-names: Wealands
+        given-names: Stephen
+      - family-names: Webb
+        given-names: Angus
+      - family-names: Wignell
+        given-names: Ethan
+    title: "Flow-MER Data Management Strategy"
+    type: report
+    year: 2023
+    url: https://data.flow-mer.org.au/pages/data-strategy
+
